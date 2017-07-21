@@ -1,0 +1,68 @@
+<html>
+	
+<title>
+	Compare price
+</title>
+<head>
+<style>
+	h1 {text-align:center;}
+	h2 {text-align:center;}
+	h3 {text-align:center;}
+td {
+    border: none;
+}
+h4 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000;
+   border-color: #0000FF; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+h4 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+hr {
+  border-color: #0000FF;
+}
+</style>
+</head>
+<body> 
+<div align="left">
+{% load staticfiles %}
+<img src="{% static "logo.PNG" %}" alt="compareninja" height=200 width=200 /><br>
+</div>
+<h4><span>Compare Prices From</span></h4>
+<div ><h3>
+<table align="center">
+<tr>
+<td width="350"><h1>
+<img style=" display:inline" src="https://pbs.twimg.com/profile_images/786187830091407360/FUH63jZv.jpg"  height="100"></h1></td>
+<td width="350"><img style=" display:inline" src="https://www.seeklogo.net/wp-content/uploads/2016/10/amazon-logo-preview.png" width="230" height="150"></td>
+<td ><h1>
+<img style=" display:inline" src="http://cdn.lmitassets.com/gograbon/images/merchant/croma-1457360538160.jpeg"   height="100"></h1></td>
+</tr></table></h3>
+</div>
+<h3>
+<hr color="#0000FF" size="1"></hr>
+<table  width="950"align="center">
+<tr>
+<td width="350"><h3>
+<a href="{% url 'second' '1'%}" style="text-decoration:none"><img src="http://ecx.images-amazon.com/images/I/61E8jlkhYnL._SX522_.jpg" width="120" height="120" >HTC Desire 10 Pro (Polar White)</a></td></h3>
+<td width="350"><h3>
+<a href="{% url 'second' '2'%}" style="text-decoration:none"><img src="http://ecx.images-amazon.com/images/I/31n1xbQSVqL.jpg" width="130" height="130" >Samsung J7 Prime 32GB ( Gold )</a></h3></td>
+</tr>
+</br>
+<tr>
+<td width="350">
+<a href="{% url 'second' '3'%}" style="text-decoration:none"><img src="http://cdn2.gsmarena.com/vv/pics/huawei/huawei-honor-8-0.jpg" width="120" height="120" align="left" style="padding-left: 30px;padding-right:15px;" ><h3 style="padding-top:80px;text-align:left">Honor 8 (Sapphire Blue)</h3></a></td>
+<td width="350">
+<a href="{% url 'second' '4'%}" style="text-decoration:none"><img src="http://ecx.images-amazon.com/images/I/317gq-PLD9L.jpg" width="120" height="120" align="left"style="padding-left: 40px;" ><h3 style="padding-top:80px;text-align:left">Lenovo K6 Note (Gold)</h3></a></td>
+</tr>
+</table>
+</form>
+</h3>
+</form>
+</body> 
+</html> 

@@ -1,0 +1,27 @@
+<html>
+<title>
+Compare Price
+</title>
+<head>
+<style>
+h1 {text-align:center;}
+h2 {text-align:center;}
+h3 {text-align:center;}
+</style>
+</head>
+<body> 
+<div align="left">
+{% load staticfiles %}
+<img src="{% static "logo.PNG" %}" alt="compareninja" height=200 width=200 /><br>
+</div>
+<h3><label>  <hr />
+<div class="post">
+<p><img src={{posts.0}} width=300 height=300></p>
+<p> {{posts.1}} <label> </p>
+<p> {{posts.2}} <label> </p>
+<p> {{posts.3}} <label> </p>
+<p> {{posts.4}} <label> </p>
+</div></h3>
+</form> 
+</body> 
+</html> 
